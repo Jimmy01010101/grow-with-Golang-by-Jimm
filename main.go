@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"go-login/handlers"
-	"go-login/store"
+	"Go-golang/handlers"
+	"Go-golang/store"
 )
 
 func main() {
