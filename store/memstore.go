@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"go-login/models"
+	"Go-golang/models"
 )
 
 var (
