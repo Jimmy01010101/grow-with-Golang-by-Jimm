@@ -1,0 +1,22 @@
+### 1. Register user baru
+POST http://localhost:1234/register
+Content-Type: application/json
+
+{
+  "username": "contoh 1",
+  "password": "rahasia123"
+}
+
+### 2. Login — dapat token
+# @name login
+POST http://localhost:1234/login
+Content-Type: application/json
+
+{
+  "username": "contoh 1",
+  "password": "rahasia123"
+}
+
+### 3. Akses /profile 
+GET http://localhost:1234/profile
+Authorization: Bearer {{login.response.body.token}}
