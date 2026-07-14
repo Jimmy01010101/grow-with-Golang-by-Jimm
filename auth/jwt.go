@@ -7,7 +7,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-var secretKey = []byte("pembelajaran-testing-aslinya-jangan-pake-hardkode")
+var secretKey = []byte(os.Getenv("JWT_SECRET_KEY")) //pake env
 
 func GenerateToken(userID int, username string) (string, error) {
 	claims := jwt.MapClaims{
